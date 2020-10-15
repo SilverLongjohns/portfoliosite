@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JC Programming</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="banner" id="sec">
+    <header>
+      <a href='#' class="logo">logo</a>
+      <div id='toggle' onclick="toggle()"></div>
+    </header>
+    <div class="content">
+      <div class="name">
+        <h1>Hi, I'm <span>Jake Cummings</span>,<br>
+        Full-stack web developer.</h1>
+      </div>
+      <div class="splash_content">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+           atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique 
+           sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum 
+           facilis est et expedita distinctio.</p>
+      </div>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/jacob-cummings-086898192/"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/SilverLongjohns"><i class="fa fa-github"></i></a></li>
+      </ul>
+    </div>
+  </section>
+  <div id="nav">
+    <ul>
+      <li><a href='#'>About</a></li>
+      <li><a href='#'>Languages</a></li>
+      <li><a href='#'>Projects</a></li>
+      <li><a href='#'>Contact</a></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+    function toggle(){
+      let sec = document.getElementById('sec');
+      let nav = document.getElementById('nav');
+      sec.classList.toggle('active');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
