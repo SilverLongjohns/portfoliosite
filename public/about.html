@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="banner" id="sec">
+    <header>
+      <a href='/' class="logo">logo</a>
+      <div id='toggle' onclick="toggle()"></div>
+    </header>
+    <div class="contentabout">
+      <div class="splash_content">
+        <p>I am a <span>full-stack web developer</span> graduate from Makers Academy. I live in London with experience in building
+       and maintaining websites for customers <span>all over the world</span>. I come from an academic background in
+       conservation biology and have worked in online and face-to-face <span>Business to Business</span> settings.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div id="nav">
+    <ul>
+      <li><a href='/about' style="color: #fff;">About</a></li>
+      <li><a href='/languages'>Languages</a></li>
+      <li><a href='/projects'>Projects</a></li>
+      <li><a href='#'>Contact</a></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+    function toggle(){
+      let sec = document.getElementById('sec');
+      let nav = document.getElementById('nav');
+      sec.classList.toggle('active');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="banner" id="sec">
+    <header>
+      <a href='/' class="logo">logo</a>
+      <div id='toggle' onclick="toggle()"></div>
+    </header>
+    <div class="projects">
+      <ul>
+        <li><a href="https://github.com/SilverLongjohns/spotiPhyte"><img src="/images/spotiphyte.png"></a>
+          <div class="description">
+            <p>Web app running off of the <span>Spotify API</span>:<br> Use your own music to grow a plant.
+            Using vanilla <span>JavaScript</span>, we built an application moves through Spotify's <span>authentication flow</span> and reads data from
+            your Spotify account.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div id="nav">
+    <ul>
+      <li><a href='/about'>About</a></li>
+      <li><a href='/languages'>Languages</a></li>
+      <li><a href='/projects' style="color: #fff;">Projects</a></li>
+      <li><a href='#'>Contact</a></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+    function toggle(){
+      let sec = document.getElementById('sec');
+      let nav = document.getElementById('nav');
+      sec.classList.toggle('active');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

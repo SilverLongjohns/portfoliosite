@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="banner" id="sec">
+    <header>
+      <a href='/' class="logo">logo</a>
+      <div id='toggle' onclick="toggle()"></div>
+    </header>
+    <div class="contentabout">
+      <div class="splash_content">
+        <p>This website was created with <span>Node</span>, <span>JavaScript</span>, <span>HTML</span> and <span>CSS</span>. Beyond that, I have programmed sites in <span>Ruby-on-Rails</span> and am very familiar with <span>SQL</span> databases!
+        </p>
+      </div>
+    </div>
+  </section>
+  <div id="nav">
+    <ul>
+      <li><a href='/about'>About</a></li>
+      <li><a href='/languages' style="color: #fff;">Languages</a></li>
+      <li><a href='/projects'>Projects</a></li>
+      <li><a href='#'>Contact</a></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+    function toggle(){
+      let sec = document.getElementById('sec');
+      let nav = document.getElementById('nav');
+      sec.classList.toggle('active');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
